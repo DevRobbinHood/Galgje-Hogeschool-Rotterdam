@@ -1,4 +1,64 @@
-print("Galgje spel Tomas de Jonge")
+print("Galgje spel Tompje dompje & emmpje pemmpje")
+
+HANGMANPICS = ['''
+  +---+
+      |
+      |
+      |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+      |
+      |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+      |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+  |   |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+ /|   |
+      |
+      |
+=========''', '''
+
+  +---+
+  |   |
+  O   |
+ /|\  |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+ /    |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+ / \  |
+      |
+========='''
+]
 
 woord = input("Vul een woord in: ")
 print(woord)
@@ -14,12 +74,14 @@ while spelen:
     
     letterinwoord = letter in woord #True of False 
     if letterinwoord == False:
+        print(HANGMANPICS[fouten])
         fouten = fouten + 1
         print("Je heb een fout gemaakt. Probeer het op nieuw!")
         
-        if fouten >= 9:
+        if fouten >= 8:
             print("Je heb verloren game over. Probeer het nog een keer!")
-            spelen = False 
+            spelen = False
+            
     
     else:
         for index in range(len(woord)):
