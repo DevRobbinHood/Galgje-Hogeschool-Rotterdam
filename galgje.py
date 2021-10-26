@@ -1,4 +1,4 @@
-print("Galgje spel Tompje dompje & emmpje pemmpje")
+print("Tomas de Jonge / 1043773 ")
 
 HANGMANPICS = ['''
   +---+
