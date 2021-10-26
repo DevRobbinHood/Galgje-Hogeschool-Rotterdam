@@ -57,6 +57,13 @@ HANGMANPICS = ['''
  /|\  |
  / \  |
       |
+=========''', '''
+  +---+
+  |   |
+  |   |
+  0   |
+ /|\  |
+ / \  |
 ========='''
 ]
 
@@ -78,7 +85,7 @@ while spelen:
         fouten = fouten + 1
         print("Je heb een fout gemaakt. Probeer het op nieuw!")
         
-        if fouten >= 8:
+        if fouten >= 9:
             print("Je heb verloren game over. Probeer het nog een keer!")
             spelen = False
             
