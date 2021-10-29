@@ -79,7 +79,7 @@ for index in woord:
 while spelen: 
     letter = input("Vul een letter in: ")
     
-    letterinwoord = letter in woord #True of False 
+    letterinwoord = letter in woord 
     if letterinwoord == False:
         print(HANGMANPICS[fouten])
         fouten = fouten + 1
@@ -88,7 +88,6 @@ while spelen:
         if fouten >= 9:
             print("Je heb verloren game over. Probeer het nog een keer!")
             spelen = False
-            
     
     else:
         for index in range(len(woord)):
