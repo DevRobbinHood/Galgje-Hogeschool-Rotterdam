@@ -1,7 +1,7 @@
 # Galgje-Hogeschool-Rotterdam
-Introductie opdracht.
-Dit is een in Python geschreven opdracht voor de Hogeschool Rotterdam.
 
-- Gemaakt door Tomas de Jonge,
-- Leerling nummer: 1043773
-- opleiding: Informatica 2022-2023
+Introduction assignment.
+This is an assignment written in Python for Rotterdam University of Applied Sciences.
+
+- Created by: Tomas de Jonge
+- Student number: 1043773
