@@ -96,6 +96,6 @@ while spelen:
             
         geraden_woord = ''.join(woordenlijst)
         if(geraden_woord == woord):
-            print("Gefeliciteerd je heb gewonnen!")
+            print("Gefeliciteerd je hebt gewonnen!")
             spelen = False
         print(woordenlijst)
