@@ -1,4 +1,4 @@
-print("Tomas de Jonge / 1043773 ")
+print("1043773 ")
 
 HANGMANPICS = ['''
   +---+
@@ -36,7 +36,6 @@ HANGMANPICS = ['''
       |
       |
 =========''', '''
-
   +---+
   |   |
   O   |
@@ -67,35 +66,35 @@ HANGMANPICS = ['''
 ========='''
 ]
 
-woord = input("Vul een woord in: ")
-print(woord)
+word = input("Enter a word: ")
+print(word)
 
-spelen = True
-fouten = 0
-woordenlijst = []
-for index in woord: 
-    woordenlijst += "_"
+play = True
+mistakes = 0
+wordlist = []
+for index in word: 
+    wordlist += "_"
     
-while spelen: 
-    letter = input("Vul een letter in: ")
+while play: 
+    letter = input("Enter a letter: ")
     
-    letterinwoord = letter in woord 
-    if letterinwoord == False:
-        print(HANGMANPICS[fouten])
-        fouten = fouten + 1
-        print("Je heb een fout gemaakt. Probeer het op nieuw!")
+    letterInWord = letter in word 
+    if letterInWord == False:
+        print(HANGMANPICS[mistakes])
+        mistakes = mistakes + 1
+        print("You made a mistake. Try again!")
         
-        if fouten >= 9:
-            print("Je heb verloren game over. Probeer het nog een keer!")
-            spelen = False
+        if mistakes >= 9:
+            print("You have lost game over. Try again!")
+            play = False
     
     else:
-        for index in range(len(woord)):
-            if woord[index] == letter:
-                woordenlijst[index] = letter
+        for index in range(len(word)):
+            if word[index] == letter:
+                wordlist[index] = letter
             
-        geraden_woord = ''.join(woordenlijst)
-        if(geraden_woord == woord):
-            print("Gefeliciteerd je hebt gewonnen!")
-            spelen = False
-        print(woordenlijst)
+        guessedWord = ''.join(wordlist)
+        if(guessedWord == word):
+            print("Congratulations you won!")
+            play = False
+        print(wordlist)
