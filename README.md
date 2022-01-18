@@ -1,4 +1,4 @@
-# Galgje-Hogeschool-Rotterdam
+# Hangman-Hogeschool-Rotterdam
 
 you can try it in https://www.programiz.com/python-programming/online-compiler/ put the code in it, and play!
 
