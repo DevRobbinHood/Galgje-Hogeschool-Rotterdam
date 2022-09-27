@@ -1,5 +1,3 @@
-print("1043773 ")
-
 HANGMANPICS = ['''
   +---+
       |
@@ -66,26 +64,26 @@ HANGMANPICS = ['''
 ========='''
 ]
 
-word = input("Enter a word: ")
+word = input('Enter a word: ')
 print(word)
 
 play = True
 mistakes = 0
 wordlist = []
 for index in word: 
-    wordlist += "_"
+    wordlist += '_'
     
 while play: 
-    letter = input("Enter a letter: ")
+    letter = input('Enter a letter: ')
     
     letterInWord = letter in word 
     if letterInWord == False:
         print(HANGMANPICS[mistakes])
         mistakes = mistakes + 1
-        print("You made a mistake. Try again!")
+        print('You made a mistake. Try again!')
         
         if mistakes >= 9:
-            print("You have lost game over. Try again!")
+            print('You have lost game over. Try again!')
             play = False
     
     else:
@@ -95,6 +93,7 @@ while play:
             
         guessedWord = ''.join(wordlist)
         if(guessedWord == word):
-            print("Congratulations you won!")
+            print('Congratulations you won!')
             play = False
+            
         print(wordlist)
